@@ -24,3 +24,5 @@ this project only uses root, img, fonts, and css
 inputs nested inside label do not need name and id because it is implied
 
 flex containers must be declared, and their children who should have flex must also be declared flex. 
+
+radio buttons must share the same name in order to be exclusive
