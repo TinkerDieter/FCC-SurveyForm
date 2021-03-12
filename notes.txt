@@ -17,3 +17,9 @@ The scss contains all scss files. SCSS is based on SASS, which is based on ruby.
 the main entry page index.html and rest of the main web pages go in root.
 
 this project only uses root, img, fonts, and css
+
+<input> should have both name and id. name is required for server side collection, whereas
+    id links the touch field to its label for accesibility
+
+inputs nested inside label do not need name and id because it is implied
+

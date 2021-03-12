@@ -13,9 +13,213 @@
                     Our goal is a diverse, ALL-inclusive galaxy-spanning empire. Let us know how we can improve your servitude.
                 </p>
             </div>
-            <div id="survey-form">
-
-            </div>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="citizen-id">Identification Number</label>
+                    <input
+                        type="text"
+                        name="citizen-id"
+                        id="citizen-id"
+                        class="form-control"
+                        placeholder="Enter your 21 digit Citizen Identification Number"
+                        minlength="21"
+                        maxlength="21"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="location">Personal Locator Designation</label>
+                    <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        class="form-control"
+                        placeholder="Enter the 9 digit Planetary Location Number from your personal locator implant"
+                        minlength="9"
+                        maxlength="9"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Empire Mail</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email address"
+                        required
+                    />
+                </div>               
+                <div class="form-group">
+                    <label for="name">Name (optional)</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Galactic Government does not recognize personal names less than 6 characters"
+                        minlength="6"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="job">If you have not been assigned a purpose that is linked to your ID, inform us of you area of toil.</label>
+                    <select name="job" id="job" class="form-control">
+                        <option disabled selected value>Select the option that best describes your work</option>
+                        <option value="student">Student</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="mercenary">Mercenary</option>
+                        <option value="rebel">Rebel</option>
+                        <option value="wookie-ewok">Wookie and/or Ewok</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend the Empire to those beyond?</p>
+                    <label for="loyal">
+                        <input
+                            name="loyal"
+                            id="loyal"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                        />The Empire should exand its limits to the ends of the universe
+                     </label>
+                    <label for="disloyal">
+                        <input
+                            name="disloyal"
+                            id="disloyal"
+                            type="radio"
+                            class="input-radio"
+                         />I would recommend the Empire to some
+                    </label>
+                    <label for="rebel">
+                        <input
+                            name="rebel"
+                            id="rebel"
+                            type="radio"
+                            class="input-radio"
+                         />Maybe
+                     </label>  
+                </div>
+                <div class="form-group">
+                    <p>What do you enjoy most about being a Galactic citizen?</p>
+                    <select name="loyality-marker" id="loyality-marker" class="form-control">
+                        <option disabled selected value>Select One</option>
+                        <option value="work">Abundance of work</option>
+                        <option value="travel">Freedom and ease to travel</option>
+                        <option value="culture">Rich and diverse cultures</option>
+                        <option value="easylife">The Empire takes care of most things for me</option>
+                        <option value="investigate">I'm not sure</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How can we improve?
+                        <span class="clue">(Selections will not negatively impact social credit score)</span>
+                    </p>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="deathstar"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Use the Deathstar less
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="jedi"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Abolish the laws against Jedis
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="sarlacc"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Invest more resources into filling Sarlacc pits
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="jawa"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Bring Jawa scavengers to justice
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="employment"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />End mandatory enrollment in Galactic labor program
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="tiefighter"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Tone down the TIE fighters
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="forcetorture"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Outlaw Force-torture
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="hutt"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Empower Hutt inclusion in the Galactic Forces
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="clemency"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Grant clemency to sexy criminals
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="more"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Embrace the Dark Side even more
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="statusquo"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Everything is just fine
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Have any comments, suggestions, or praise?
+                        <textarea
+                        id="comments"
+                        name="comment"
+                        placeholder="Enter your feedback here ...">
+                        </textarea>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button id="submit-button" type="submit">
+                        SURRENDER INFORMATION
+                    </button>
+                </div>
+            </form>
         </div>
     </body>
 </html>
