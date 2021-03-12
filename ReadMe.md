@@ -3,6 +3,8 @@ FreeCodeCamp Responsive Web Design, Survey form project
 This project is a single survey form. It's theme is the ~~Imperial Army~~ of the Star Wars universe, and how it can be improved. The target user is an Imperial citizen. 
 
 12.03.2021, 00:00 : Changed theme to Galactic Citizen survey, how to improve the Galactic Empire.
+
+Gave up on making it look nice, need to practice on other projects. Need to work on CSS fundamentals. 12.03.2021, 10:14
 Started on 11.03.2021, 22:51, ReadMe last updated 12.03.2021, 00:00
 
 Info from FCC (crossed out user stories are satisfied):
