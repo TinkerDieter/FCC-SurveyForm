@@ -7,13 +7,25 @@
     <body>
         <div id="container">
             <div id="survey-header">
-            <h1 id="heading">Galactic Empire Public Outreach Program</h1>
+            <h1 id="title">Galactic Empire Public Outreach Program</h1>
                 <p id="em-subheading">We care.</p>
-                <p id="subheading">
+                <p id="description">
                     Our goal is a diverse, ALL-inclusive galaxy-spanning empire. Let us know how we can improve your servitude.
                 </p>
             </div>
             <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Galactic Government does not recognize personal names less than 6 characters"
+                        minlength="6"
+                        required
+                    />
+                </div>
                 <div class="form-group">
                     <label for="citizen-id">Identification Number</label>
                     <input
@@ -25,6 +37,18 @@
                         minlength="21"
                         maxlength="21"
                         required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(For Species on the Rapid Regeneration List)</span></label>
+                    <input
+                        type="number"
+                        name="number"
+                        id="number"
+                        class="form-control"
+                        placeholder="Age"
+                        min="14"
+                        max="120"
                     />
                 </div>
                 <div class="form-group">
@@ -41,7 +65,7 @@
                     />
                 </div>
                 <div class="form-group">
-                    <label for="email">Empire Mail</label>
+                    <label id="email-label" for="email">Empire Mail</label>
                     <input
                         type="email"
                         name="email"
@@ -51,17 +75,6 @@
                         required
                     />
                 </div>               
-                <div class="form-group">
-                    <label for="name">Name (optional)</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="form-control"
-                        placeholder="Galactic Government does not recognize personal names less than 6 characters"
-                        minlength="6"
-                    />
-                </div>
                 <div class="form-group">
                     <label for="job">If you have not been assigned a purpose that is linked to your ID, inform us of you area of toil.</label>
                     <select name="job" id="job" class="form-control">
@@ -103,7 +116,7 @@
                 </div>
                 <div class="form-group">
                     <p>What do you enjoy most about being a Galactic citizen?</p>
-                    <select name="loyality-marker" id="loyality-marker" class="form-control">
+                    <select name="loyality-marker" id="dropdown" class="form-control">
                         <option disabled selected value>Select One</option>
                         <option value="work">Abundance of work</option>
                         <option value="travel">Freedom and ease to travel</option>
@@ -210,12 +223,13 @@
                         <textarea
                         id="comments"
                         name="comment"
-                        placeholder="Enter your feedback here ...">
+                        placeholder="Enter your feedback here ..."
+                        >
                         </textarea>
                     </label>
                 </div>
                 <div class="form-group">
-                    <button id="submit-button" type="submit">
+                    <button id="submit" type="submit">
                         SURRENDER INFORMATION
                     </button>
                 </div>
