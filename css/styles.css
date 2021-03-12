@@ -1,9 +1,57 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    background-image: ;
+    background-image: linear-gradient(0Deg, rgba(54, 49, 50, 0.719), rgba(8,0,1,0.3039443155452436)), url(../img/imperial-officers-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+main {
+    margin: 0;
+    color: #726f6f;
+    width: 100%;
+}
+
+#hope {
+    text-align: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
 .form-group {
+    margin: 0 auto 0 auto;
+    padding: 0.25rem;
+    width: 80%;
 
 }
 
-.form-control {
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid black;
+    border-radius: 0.3rem;
 }
 
 .input-radio {
@@ -13,7 +61,13 @@
 .input-checkbox {
 
 }
-
+#check-group{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 5px;
+    flex-wrap: wrap;
+}
 .clue {
 
 }
@@ -23,10 +77,19 @@
 }
 
 #survey-header {
-
+    text-align: center;
+    color:rgb(88, 4, 4);
+    background-color: rgba(177, 168, 168, 0.5);
+    border-top: solid;
+    border-bottom: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 #title {
-
+    font-size: 4rem;
 }
 #em-subheading {
 
@@ -36,7 +99,9 @@
 }
 
 #survey-form {
-
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(88, 4, 4, 0.8);
 }
 
 #comments {
